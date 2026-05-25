@@ -1,4 +1,4 @@
-# Velocilead - Developer Documentation
+# 🚀 Velocilead - Developer Documentation
 
 It is a full-stack Customer Relationship Management (CRM) application built using the MERN stack. It features secure JWT authentication, lead pipeline management, and AI-powered insights powered by Google Gemini AI.
 
