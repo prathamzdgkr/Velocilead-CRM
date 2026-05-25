@@ -4,6 +4,8 @@ const dotenv = require("dotenv");
 const rateLimit = require('express-rate-limit');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
+const helmet = require('helmet');
+const hpp = require('hpp');
 
 const connectDB = require("./config/db");
 const userRoutes = require('./routes/userRoutes');
@@ -14,46 +16,26 @@ dotenv.config();
 connectDB();
 
 const app = express();
+app.use(helmet());
 
 // Standard Middleware
 app.use(cors());
 app.use(express.json());
 
-// ==========================================
-// 🛡️ SECURITY MIDDLEWARE START
-// ==========================================
-
-// 1. Data Sanitization against NoSQL Injection
 app.use(mongoSanitize());
 
-// 2. Data Sanitization against XSS
+
 app.use(xss());
 
-// 3A. Global API Rate Limiter (For normal app usage)
-const apiLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // Generous limit for fetching data
-  message: { message: 'Too many requests from this IP, please try again after 15 minutes' }
-});
+app.use(hpp());
 
-// Apply to all /api routes
+const apiLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 100 });
 app.use('/api', apiLimiter);
 
-// 3B. Strict Login Rate Limiter (Brute-Force Protection)
-const loginLimiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // ONLY 5 TRIES ALLOWED!
-  message: { message: 'Too many failed login attempts. Please try again after 15 minutes.' }
-});
-
-// Apply ONLY to the login route
+const loginLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 5 });
 app.use('/api/auth/login', loginLimiter);
 
-// ==========================================
-// 🛡️ SECURITY MIDDLEWARE END
-// ==========================================
 
-// Basic Root Route
 app.get("/", (req, res) => {
     res.send("NexoraCRM API Running");
 });
