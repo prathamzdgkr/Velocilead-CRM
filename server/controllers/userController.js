@@ -15,9 +15,6 @@ const updateProfile = async (req, res) => {
         user.name = req.body.name || user.name;
         user.email = req.body.email || user.email;
 
-        // If your User model doesn't have a notifications object yet, 
-        // Mongoose will ignore it unless you add it to your User schema.
-        // Let's assume you've added it, or we just save what is passed.
         if (req.body.notifications) {
             user.notifications = req.body.notifications;
         }

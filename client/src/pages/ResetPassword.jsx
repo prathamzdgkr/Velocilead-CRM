@@ -8,7 +8,6 @@ const ResetPassword = () => {
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
   
-  // Grabs the token from the URL (e.g., /reset-password/12345abcd)
   const { token } = useParams(); 
   const navigate = useNavigate();
 
@@ -19,11 +18,10 @@ const ResetPassword = () => {
     }
 
     try {
-      // Put request matching the backend route
       const { data } = await API.put(`/auth/resetpassword/${token}`, { password });
       setMessage(data.message);
       setError('');
-      setTimeout(() => navigate('/login'), 3000); // Redirect to login after success
+      setTimeout(() => navigate('/login'), 3000);
     } catch (err) {
       setError(err.response?.data?.message || 'Invalid or expired token');
       setMessage('');

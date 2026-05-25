@@ -15,7 +15,6 @@ const leadSchema = new mongoose.Schema(
 
     status: {
       type: String,
-      // This array must match the stages in PipelineBoard.jsx exactly
       enum: ["New", "Contacted", "Qualified", "Closed"],
       default: "New",
     },

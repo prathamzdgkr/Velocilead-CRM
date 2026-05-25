@@ -118,8 +118,8 @@ Make sure the following are installed:
 # 📥 Clone Repository
 
 ```bash
-git clone https://github.com/YourUsername/nexora-crm.git
-cd nexora-crm
+git clone https://github.com/prathamzdgkr/nexora-ai-crm
+cd nexora-ai-crm
 ```
 
 ---
@@ -272,8 +272,6 @@ NexoraCRM uses Google Gemini AI to analyze customer and lead data to generate:
 
 ## Backend Deployment
 - Render
-- Railway
-- Cyclic
 - Docker
 
 ## Database

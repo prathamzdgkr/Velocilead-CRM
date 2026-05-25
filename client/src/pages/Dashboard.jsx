@@ -11,7 +11,7 @@ import {
   Plus, Loader2, Search, Settings, Moon, Sun, Monitor, LayoutList, Globe 
 } from 'lucide-react';
 import API from '../api/axios';
-import { useTheme } from '../context/ThemeContext'; // <--- THIS IS REQUIRED FOR THE TOGGLE TO WORK
+import { useTheme } from '../context/ThemeContext'; 
 
 const Dashboard = () => {
   // GLOBAL THEME CONTEXT

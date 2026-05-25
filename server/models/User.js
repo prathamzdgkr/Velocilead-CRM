@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
-const crypto = require("crypto"); // Built into Node.js, no install needed
+const crypto = require("crypto"); 
 
 const userSchema = new mongoose.Schema(
   {

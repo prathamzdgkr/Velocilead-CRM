@@ -9,7 +9,6 @@ const AddLeadModal = ({ isOpen, onClose, onAdd, onUpdate, editData }) => {
     status: 'New'
   });
 
-  // Populate form if editing
   useEffect(() => {
     if (editData) {
       setFormData({
@@ -19,7 +18,7 @@ const AddLeadModal = ({ isOpen, onClose, onAdd, onUpdate, editData }) => {
         status: editData.status || 'New'
       });
     } else {
-      // Reset form if just adding
+      
       setFormData({ name: '', email: '', company: '', status: 'New' });
     }
   }, [editData, isOpen]);
@@ -30,7 +29,6 @@ const AddLeadModal = ({ isOpen, onClose, onAdd, onUpdate, editData }) => {
   e.preventDefault();
   
   if (editData) {
-    // Ensure you are passing the ID AND the form data
     onUpdate(editData._id, formData);
   } else {
     onAdd(formData);

@@ -7,7 +7,7 @@ const PipelineBoard = ({ leads, onStatusChange }) => {
   
   const handleDragStart = (e, leadId) => {
     e.dataTransfer.setData('text/plain', leadId);
-    e.currentTarget.classList.add('opacity-50'); // Visual cue for moving
+    e.currentTarget.classList.add('opacity-50'); 
   };
 
   const handleDragEnd = (e) => {

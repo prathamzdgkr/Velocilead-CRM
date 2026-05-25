@@ -7,7 +7,6 @@ const MetricCards = ({ leads = [] }) => {
   const qualifiedLeads = leads.filter(l => l.status === 'Qualified').length;
   const closedLeads = leads.filter(l => l.status === 'Closed').length;
   
-  // Calculate a mock AI Conversion metric (weighted by qualified leads)
   const aiConversion = totalLeads > 0 ? Math.min(Math.round((qualifiedLeads / (totalLeads || 1)) * 100) + 45, 98) : 0;
 
   return (
