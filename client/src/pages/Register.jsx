@@ -29,7 +29,7 @@ const Register = () => {
               <div className="p-2 bg-white/10 rounded-xl backdrop-blur-sm border border-white/20">
                 <BrainCircuit className="text-purple-400" size={28} />
               </div>
-              <span className="text-2xl font-black tracking-tight">Nexora<span className="text-purple-400">AI</span></span>
+              <span className="text-2xl font-black tracking-tight">Velocilead<span className="text-purple-400">AI</span></span>
             </div>
             <h1 className="text-4xl font-bold mb-4 leading-tight">Start closing deals faster today.</h1>
             <p className="text-zinc-400 font-medium leading-relaxed">Create your account to unlock AI-powered lead scoring, smart pipeline management, and automated outreach.</p>
@@ -40,7 +40,7 @@ const Register = () => {
         <div className="md:w-7/12 p-8 md:p-16 bg-white flex flex-col justify-center">
           <div className="max-w-md w-full mx-auto">
             <h2 className="text-3xl font-black text-zinc-900 mb-2">Create an account</h2>
-            <p className="text-zinc-500 font-medium mb-8">Enter your details to get started with NexoraAI.</p>
+            <p className="text-zinc-500 font-medium mb-8">Enter your details to get started with VelocileadAI.</p>
 
             <form onSubmit={handleSubmit} className="space-y-5">
               {/* Full Name Input */}

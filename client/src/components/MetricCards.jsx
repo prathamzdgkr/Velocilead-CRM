@@ -49,7 +49,7 @@ const MetricCards = ({ leads = [] }) => {
           <div className="p-2 bg-purple-50 rounded-lg text-purple-600"><BrainCircuit size={20} /></div>
         </div>
         <h3 className="text-3xl font-black text-purple-700">{aiConversion}%</h3>
-        <p className="text-xs text-purple-400 mt-1 font-bold">Nexora AI Model</p>
+        <p className="text-xs text-purple-400 mt-1 font-bold">Velocilead AI Model</p>
       </div>
 
     </div>

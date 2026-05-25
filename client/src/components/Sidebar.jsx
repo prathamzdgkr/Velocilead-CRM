@@ -37,7 +37,7 @@ const Sidebar = ({ activeTab, setActiveTab, isOpen, setIsOpen }) => {
             <BrainCircuit className="text-white" size={20} />
           </div>
           <span className="text-lg font-black tracking-tight text-zinc-900 dark:text-white">
-            Nexora<span className="text-purple-600 dark:text-purple-400">AI</span>
+            Velocilead<span className="text-purple-600 dark:text-purple-400">AI</span>
           </span>
         </div>
         <button onClick={() => setIsOpen(false)} className="md:hidden text-zinc-500 hover:text-zinc-900 dark:hover:text-white">

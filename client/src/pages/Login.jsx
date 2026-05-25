@@ -28,7 +28,7 @@ const Login = () => {
               <div className="p-2 bg-white/10 rounded-xl backdrop-blur-sm border border-white/20">
                 <BrainCircuit className="text-purple-400" size={28} />
               </div>
-              <span className="text-2xl font-black tracking-tight">Nexora<span className="text-purple-400">AI</span></span>
+              <span className="text-2xl font-black tracking-tight">Velocilead<span className="text-purple-400">AI</span></span>
             </div>
             <h1 className="text-4xl font-bold mb-4 leading-tight">Welcome back to your pipeline.</h1>
             <p className="text-zinc-400 font-medium leading-relaxed">Sign in to access your AI-powered insights, manage prospects, and close deals faster.</p>

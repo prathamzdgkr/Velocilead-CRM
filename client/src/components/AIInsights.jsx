@@ -28,7 +28,7 @@ const AIInsights = ({ isOpen, onClose, loading, data, leadName }) => {
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="text-xl font-black bg-clip-text text-transparent bg-gradient-to-r from-zinc-900 to-zinc-600 tracking-tight">
-                  Nexora Intelligence
+                  Velocilead Intelligence
                 </h3>
                 <span className="px-2 py-0.5 rounded-full bg-purple-50 text-purple-600 text-[10px] font-bold uppercase tracking-wider border border-purple-100">
                   AI Generated

@@ -228,7 +228,7 @@ const Dashboard = () => {
             {activeTab === 'ai' && (
               <div className="space-y-6">
                 <div className="bg-gradient-to-br from-zinc-900 to-purple-950 dark:from-zinc-900 dark:to-purple-950 rounded-[2rem] p-8 text-white">
-                  <h2 className="text-3xl font-black mb-2">Nexora Intelligence</h2>
+                  <h2 className="text-3xl font-black mb-2">Velocilead Intelligence</h2>
                   <p className="text-zinc-300">Select a prospect to generate actionable AI strategies.</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

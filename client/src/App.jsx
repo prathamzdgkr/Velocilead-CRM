@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { AuthContext } from './context/AuthContext';
-import { ThemeProvider } from './context/ThemeContext'; 
+import { ThemeProvider } from './context/ThemeContext';
+import Landing from './pages/Landing'; 
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
@@ -26,6 +27,7 @@ function App() {
   return (
     <ThemeProvider>
       <Routes>
+        <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />

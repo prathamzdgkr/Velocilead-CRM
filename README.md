@@ -1,6 +1,6 @@
-# 🚀 NexoraCRM - AI Powered MERN CRM
+# Velocilead - Developer Documentation
 
-NexoraCRM is a full-stack Customer Relationship Management (CRM) application built using the MERN stack. It features secure JWT authentication, lead pipeline management, and AI-powered insights powered by Google Gemini AI.
+It is a full-stack Customer Relationship Management (CRM) application built using the MERN stack. It features secure JWT authentication, lead pipeline management, and AI-powered insights powered by Google Gemini AI.
 
 This repository follows a monorepo architecture containing both the React frontend and Express backend.
 
@@ -118,8 +118,8 @@ Make sure the following are installed:
 # 📥 Clone Repository
 
 ```bash
-git clone https://github.com/prathamzdgkr/nexora-ai-crm
-cd nexora-ai-crm
+git clone https://github.com/prathamzdgkr/Velocilead-CRM.git
+cd Velocilead-CRM
 ```
 
 ---
@@ -256,7 +256,7 @@ http://localhost:5000
 
 # 🤖 AI Integration
 
-NexoraCRM uses Google Gemini AI to analyze customer and lead data to generate:
+It uses Google Gemini AI to analyze customer and lead data to generate:
 - Customer Insights
 - Lead Recommendations
 - Follow-Up Suggestions
